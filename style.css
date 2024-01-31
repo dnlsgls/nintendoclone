@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgb(72, 72, 72);
+    -webkit-font-smoothing: antialiased;
+}
+
+.list {
+    color: gray;
+    margin-right: 20px;
+}
+
+#info {
+    display: flex;
+}
+
+h4 {
+    text-align: center;
+}
+
+ul {
+    font-size: 12px;
+    color: red;
+}
+
+.footerlinks {
+    background: transparent;
+    margin: 0px;
+    border: 0px;
+    line-height: 1.4;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    color: rgb(230, 0, 18);
+    box-shadow: rgba(172, 0, 13, 0) 0px 0px 0px 4px;
+    transition: box-shadow 200ms ease-in-out 25ms;
+}
+
+.list.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.list.column h4 {
+    text-align: center;
+}
