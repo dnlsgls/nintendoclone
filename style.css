@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "museo-sans-700";
+    src: url(assets/fonts/MuseoSans_700.ttf);
+  }
+ 
+  :root{
+    --nintendo-font:"museo-sans-700", -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-font: rgb(72, 72, 72);
+    --font-weight-nintendo: 700;
+    --font-size-text: 0.875rem;
+    --line-text: 1.4;
+  }
+  
+  body{
+    font-family: var(--nintendo-font);
+    color: var(--color-font);
+    line-height: var(--line-text);
+  }
+  /* Estilo del header y Menus*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: rgb(255, 255, 255);
+    height: 52px;
+  }
+
+  .logo-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+
+  #logo-container{
+    padding: 0 20px;
+    width: 105px;
+    height: 52px;
+    background-color: rgb(230, 0, 18);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: white;
+  }
+
+  #list-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: inherit;
+  }
+
+  *{
+    padding: 0;
+    margin:0;
+  }
+
+  .icon{
+    margin-right: 5px;
+  }
+
+  #formulario{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    padding: 2px 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  #formulario:hover{
+    border-bottom: 1px solid rgb(230, 0, 18);
+  }
+  #formulario:hover svg{
+    fill: rgb(230, 0, 18);
+  }
+
+  form select,input{
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: inherit;
+    color:#484848;
+  }
+
+  form select:hover,input{
+    color: rgb(230, 0, 18);
+  }
+  input::placeholder{
+    color: #727272;
+    font-weight: 100;
+    font-family: inherit;
+    font-size: 0.875rem;
+  }
+  input:hover::placeholder{
+    color: rgb(230, 0, 18);
+  }
+
+  .search-button{
+    background: none;
+    border: none;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 0px;
+    transition: color 200ms ease-in-out 25ms;
+  }
+
+  .menu2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn-menu2{
+    background-color:white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: inherit;
+    color:#484848;
+    border: none;
+  }
+
+  .btn-menu2:hover{
+    color: rgb(230, 0, 18);
+  }
+
+  .btn-menu2:hover svg{
+    fill: rgb(230, 0, 18);
+  }
+
+  a{
+    text-decoration: none;
+    color:#484848;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: inherit;
+  }
+
+  a:hover{
+    color: rgb(230, 0, 18);
+  }
+
+  a:hover svg{
+    fill: rgb(230, 0, 18);
+  }
+
+  svg{
+    fill: #484848;
+  }
