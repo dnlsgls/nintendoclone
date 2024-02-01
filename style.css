@@ -15,7 +15,7 @@
   
   .shop{
     background-color: rgb(230, 0, 18);
-    border-color: rgb(230, 0, 18);
+    border:none;
     transform: none;
     border-radius: 0.5rem;
     color: #fff;
