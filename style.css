@@ -27,7 +27,7 @@
 
   .shop:hover{
     background-color: rgb(133, 0, 0);
-    padding: 10px 18px !important;
+    transform: scaleX(1.05) scaleY(1.05) translatez(0px);
   }
   
   .texto{
