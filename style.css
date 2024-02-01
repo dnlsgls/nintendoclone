@@ -151,7 +151,10 @@
   .btn-menu2:hover svg{
     fill: rgb(230, 0, 18);
   }
-
+  .header-icon-alin{
+    display: flex;
+    align-items: center;
+  }
   a{
     text-decoration: none;
     color:#484848;
