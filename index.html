@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="tipografia.css" />
     <link rel="stylesheet" href="style.css" />
     <!--Añadimos el favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+    <link rel="icon" type="image/x-icon" href="imagenes/icon.png" />
     <title>Nintendo</title>
   </head>
   <body>
-    <header>
-      <div class="logo-form-container">
-        <div id="logo-container">
+    <header class="header-header">
+      <div class="header-logo-form-container">
+        <div class="header-logo-container">
           <svg
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 97 24"
@@ -31,10 +31,10 @@
             ></path>
           </svg>
         </div>
-        <form id="formulario">
+        <form class="header-formulario">
           <label for="busquedad">
-            <button class="search-button">
-              <svg
+            <button class="header-search-button">
+              <svg class="header-svg-form"
                 data-name="Magnifying glass"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -52,11 +52,11 @@
             </button>
             <input
               type="search"
-              class="input"
+              class="header-input"
               placeholder="Search"
               id="busquedad"
             />
-            <select>
+            <select class="header-selector">
               <option value="all categories">All categories</option>
               <option value="games">Games</option>
               <option value="hardwares">Hardwares</option>
@@ -68,11 +68,11 @@
         </form>
       </div>
       <nav>
-        <ul id="list-container">
-          <li>
-            <a class="header-icon-alin" href="#"
+        <ul class="header-list-container">
+          <li class="header-hidden header-li">
+            <a href="#" class="header-a-hidden header-a-normal"
               ><svg
-                class="icon"
+                class="header-icon header-svg-a"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
                 width="18"
@@ -89,10 +89,10 @@
               Support</a
             >
           </li>
-          <li>
-            <a class="header-icon-alin" href="#"
+          <li class="header-hidden header-li">
+            <a href="#" class="header-a-hidden header-a-normal"
               ><svg
-                class="icon"
+                class="header-icon header-svg-a"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
                 width="18"
@@ -110,10 +110,10 @@
               Wish List</a
             >
           </li>
-          <li>
-            <a class="header-icon-alin" href="#"
+          <li class="header-hidden header-li">
+            <a href="#" class="header-a-hidden header-a-normal"
               ><svg
-                class="icon"
+                class="header-icon header-svg-a"
                 data-name="Shopping cart"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -130,10 +130,10 @@
               Cart</a
             >
           </li>
-          <li>
-            <a class="header-icon-alin" href="#"
+          <li class="header-hidden header-li">
+            <a href="#" class="header-a-hidden header-a-normal"
               ><svg
-                class="icon"
+                class="header-icon header-svg-a"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
                 width="18"
@@ -149,15 +149,17 @@
               Log in / Sign up</a
             >
           </li>
-          <li>
-            <a href="#"><img src="assets/img/Usa.webp" alt="bandera" /></a>
+          <li class="header-idioma-flag header-li">
+            <a href="#" class="header-a-normal"
+              ><img class="header-bandera" src="assets/img/Usa.webp" alt="bandera"
+            /></a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="menu2">
-      <button value="My Nintendo Store" class="btn-menu2">
-        <svg
+    <div class="header-menu2">
+      <button value="My Nintendo Store" class="header-btn-menu2">
+        <svg class="header-svg-btn"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -170,26 +172,10 @@
             d="M26.667 0H5.333A5.333 5.333 0 0 0 0 5.333v21.334A5.333 5.333 0 0 0 5.333 32h21.334A5.333 5.333 0 0 0 32 26.667V5.333A5.333 5.333 0 0 0 26.667 0zm-5.105 22.423a5.212 5.212 0 0 1-2.37-.602 10.482 10.482 0 0 1-13.67-1.608.803.803 0 0 1 1.228-1.036 8.866 8.866 0 0 0 11.914 1.04.803.803 0 0 1 .986-.005 3.461 3.461 0 0 0 5.41-2.888 3.495 3.495 0 0 0-3.39-3.416c-.016 0-.036 0-.063-.002a.962.962 0 0 0-.12.003.806.806 0 0 1-.778-.455 6.54 6.54 0 0 0-5.992-3.848c-2.82 0-5.738 1.802-5.738 4.819-.003.818.35 1.596.969 2.132l1.688-3.147a.803.803 0 0 1 1.423.015l.982 1.926.983-1.926a.8.8 0 0 1 .71-.438c.3 0 .574.164.716.428l2.076 3.933a.8.8 0 0 1-.03.804.802.802 0 0 1-1.391-.054l-1.353-2.564-.995 1.95a.803.803 0 0 1-1.431-.001l-1-1.96-1.384 2.58a.805.805 0 0 1-1.046.349 4.563 4.563 0 0 1-2.524-4.027C7.372 10.403 11.107 8 14.717 8a8.081 8.081 0 0 1 7.209 4.308 5.063 5.063 0 0 1-.363 10.115z"
           ></path>
         </svg>
-        My Nintendo Store<svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          width="12"
-          role="presentation"
-          alt=""
-          data-testid="ChevronDownIcon"
-          size="12"
-          color="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            fill="currentColor"
-            d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"
-          ></path>
-        </svg>
+        My Nintendo Store
       </button>
-      <button value="Games" class="btn-menu2">
-        <svg
+      <button value="Games" class="header-btn-menu2">
+        <svg class="header-svg-btn"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           width="16"
@@ -203,26 +189,10 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        Games<svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          width="12"
-          role="presentation"
-          alt=""
-          data-testid="ChevronDownIcon"
-          size="12"
-          color="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            fill="currentColor"
-            d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"
-          ></path>
-        </svg>
+        Games
       </button>
-      <button value="Nintendo Switch" class="btn-menu2">
-        <svg
+      <button value="Nintendo Switch" class="header-btn-menu2">
+        <svg class="header-svg-btn"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           width="16"
@@ -235,26 +205,10 @@
             d="M13.54 0a.18.18 0 0 1 .17.17v31.66a.15.15 0 0 1-.17.17H8.11a6.86 6.86 0 0 1-6.85-6.8V6.74A6.81 6.81 0 0 1 8.11 0h5.43zm10.4 0a6.77 6.77 0 0 1 6.8 6.74V25.2a6.82 6.82 0 0 1-6.85 6.8h-5.43a.15.15 0 0 1-.17-.17V.17c0-.11.11-.17.22-.17h5.43zM7.49 19.6a1.26 1.26 0 1 0 0 2.51 1.32 1.32 0 0 0 1.31-1.25 1.28 1.28 0 0 0-1.31-1.26zm17-3.6a2.86 2.86 0 0 0-2.85 2.86A2.86 2.86 0 1 0 24.51 16zm-14.28.86a1.26 1.26 0 1 0 0 2.51 1.35 1.35 0 0 0 1.31-1.26 1.32 1.32 0 0 0-1.29-1.25zm-5.49 0a1.26 1.26 0 1 0 0 2.51 1.36 1.36 0 0 0 1.32-1.26 1.28 1.28 0 0 0-1.3-1.25zm2.75-2.69a1.26 1.26 0 1 0 0 2.52 1.37 1.37 0 0 0 1.33-1.26 1.28 1.28 0 0 0-1.31-1.26zm17-4a1.36 1.36 0 0 0-1.31 1.26 1.32 1.32 0 1 0 1.31-1.26zm-17-5.08a2.86 2.86 0 1 0 0 5.71 2.86 2.86 0 0 0 2.85-2.86 2.82 2.82 0 0 0-2.83-2.85zm19.77 2.4a1.26 1.26 0 1 0 1.31 1.25 1.32 1.32 0 0 0-1.29-1.25zm-5.43 0a1.26 1.26 0 1 0 1.31 1.25 1.29 1.29 0 0 0-1.29-1.25zm2.68-2.75A1.36 1.36 0 0 0 23.2 6a1.32 1.32 0 1 0 1.31-1.26z"
           ></path>
         </svg>
-        Nintendo Switch<svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          width="12"
-          role="presentation"
-          alt=""
-          data-testid="ChevronDownIcon"
-          size="12"
-          color="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            fill="currentColor"
-            d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"
-          ></path>
-        </svg>
+        Nintendo Switch
       </button>
-      <button value="News & Events" class="btn-menu2">
-        <svg
+      <button value="News & Events" class="header-btn-menu2">
+        <svg class="header-svg-btn"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           width="16"
@@ -269,8 +223,8 @@
         </svg>
         News & Events
       </button>
-      <button value="Play Nintendo" class="btn-menu2">
-        <svg
+      <button value="Play Nintendo" class="header-btn-menu2">
+        <svg class="header-svg-btn"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           width="16"
@@ -284,24 +238,112 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        Play Nintendo<svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-          width="12"
-          role="presentation"
-          alt=""
-          data-testid="ChevronDownIcon"
-          size="12"
-          color="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            fill="currentColor"
-            d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"
-          ></path>
-        </svg>
+        Play Nintendo
       </button>
+    </div>
+    <div class="header-menu-resp-container">
+      <div class="header-menu-responsive">
+        <button class="header-btn-normal-resp">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            xml:space="preserve"
+            width="32"
+            role="presentation"
+            alt=""
+            data-testid="HamburgerMenuIcon"
+            color="currentColor"
+            size="24"
+            height="32"
+          >
+            <path
+              fill="#484848"
+              d="M0 12.8h32v6.4H0zM0 24h32v6.4H0zM0 1.6h32V8H0z"
+            ></path>
+          </svg>
+        </button>
+        <button class="header-btn-normal-resp">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="32"
+            role="presentation"
+            alt=""
+            data-testid="HeartIcon"
+            color="currentColor"
+            size="24"
+            height="32"
+          >
+            <path
+              d="M22.3 1.3c-2.3 0-4.5 1-6.3 2.8-1.7-1.8-3.9-2.8-6.3-2.8C4.4 1.3 0 5.7 0 11.2c0 2.6 1.2 5.1 3.3 7.3L15 30.2c.3.3.6.4 1 .4.3 0 .7-.1 1-.4l11.6-11.6c1.5-1.8 3.3-4.3 3.3-7.5.1-5.4-4.3-9.8-9.6-9.8z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="#484848"
+            ></path>
+          </svg>
+        </button>
+        <button class="header-red-btn">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            data-name="Magnifying glass"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="32"
+            role="presentation"
+            alt=""
+            data-testid="MagnifyingGlassIcon"
+            size="32"
+            color="currentColor"
+            height="32"
+          >
+            <path
+              d="M31.564 28.745l-8.73-8.73a12.66 12.66 0 1 0-2.804 2.834l8.715 8.715a1.5 1.5 0 0 0 2.114 0l.705-.705a1.5 1.5 0 0 0 0-2.114zm-18.966-7.433A8.611 8.611 0 1 1 21.21 12.7a8.62 8.62 0 0 1-8.612 8.612z"
+              fill="#FFFFFF"
+            ></path>
+          </svg>
+        </button>
+        <button class="header-btn-normal-resp">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            data-name="Shopping cart"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="32"
+            role="presentation"
+            alt=""
+            data-testid="ShoppingCartIcon"
+            size="24"
+            color="currentColor"
+            height="32"
+          >
+            <path
+              fill="#484848"
+              d="M23.12 28.073a2.248 2.248 0 1 0 2.25-2.326h-.005a2.288 2.288 0 0 0-2.245 2.326zm2.397-7.29a1.728 1.728 0 0 0 1.498-.982l4.844-11.686a1.544 1.544 0 0 0-.15-1.551 1.593 1.593 0 0 0-1.349-.673H8.44l-.55-2.895A1.494 1.494 0 0 0 6.393 1.6H1.598A1.606 1.606 0 0 0 0 3.255a1.548 1.548 0 0 0 1.598 1.654h3.496L7.49 18.973l-1.098 4.706a1.67 1.67 0 0 0 .25 1.395 1.529 1.529 0 0 0 1.198.673h18.675a1.656 1.656 0 0 0 0-3.31H9.937l.4-1.654zm-18.726 7.29a2.248 2.248 0 1 0 2.25-2.326h-.005a2.288 2.288 0 0 0-2.245 2.326z"
+            ></path>
+          </svg>
+        </button>
+        <button class="header-btn-normal-resp">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="32"
+            role="presentation"
+            alt=""
+            data-testid="UserIcon"
+            color="currentColor"
+            size="24"
+            height="32"
+          >
+            <path
+              d="M16.22 19.41A9.71 9.71 0 1 1 26 9.7a9.74 9.74 0 0 1-9.8 9.71M1.84 32a10.88 10.88 0 0 1 10.94-10.74h6.57A10.88 10.88 0 0 1 30.29 32H1.84"
+              fill="#484848"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </body>
 </html>
