@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "museo-sans-700";
+    src: url(assets/fonts/MuseoSans_700.ttf);
+  }
+  
+  :root{
+    --nintendo-font:"museo-sans-700", -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-font: rgb(72, 72, 72);
+    --font-weight-nintendo: 700;
+    --font-size-text: 0.875rem;
+    --line-text: 1.4;
+  }
+  
+  body{
+    font-family: var(--nintendo-font);
+    color: var(--color-font);
+    line-height: var(--line-text);
+  }
