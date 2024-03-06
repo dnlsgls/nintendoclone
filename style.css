@@ -1,3 +1,4 @@
+
 /*Estilos dados por el profesor*/
 @font-face {
   font-family: "museo-sans-700";
@@ -255,3 +256,47 @@ body {
     margin-top: -20px;
   }
 }
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover
+      repeat;
+    padding: 20px;
+  }
+  
+  .offer-info {
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .shop{
+    background-color: rgb(230, 0, 18);
+    border:none;
+    transform: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 8px 15px !important;
+  }
+
+  .shop:hover{
+    background-color: rgb(133, 0, 0);
+    transform: scaleX(1.05) scaleY(1.05) translatez(0px);
+  }
+  
+  .texto{
+    color: rgb(72, 72, 72);
+    text-align: start;
+    margin-right: 20px;
+  }
+  
+  .img-banner {
+    margin-bottom: -100px;
+    border-radius: 10px;
+  }
+
