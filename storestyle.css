@@ -2,10 +2,13 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
 
+.general-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -77,14 +80,14 @@ body {
 }
 
 
-h2{
+.store-container h2{
     font-size: 1,75rem;
     color: #484848;
     font-weight: 700;
 
 }
 
-p{
+.store-container p{
     margin: 0;
     font-size: 1.3125rem;
     font-weight: 700;
@@ -124,9 +127,10 @@ p{
     border-radius: 0.75rem;
     transition: all 0.3s ease-in-out;
     font-weight: 700;
+    text-wrap: nowrap;
   }
   
-  span{
+  .store-container span{
     text-align: center;
   }
   .global-btn:hover {
