@@ -176,14 +176,6 @@ html, body{
     }
 }
 
-@media (max-width: 429px){
-    .ch-title{
-        font-size: 1.30rem;
-    }
-    .ch-text-bottom-img{
-        font-size: 1.125rem;
-    }
-}
 
 
 @media (max-width: 768px){
@@ -203,6 +195,14 @@ html, body{
     }   
 }
 
+@media (max-width: 429px){
+    .ch-title{
+        font-size: 1.30rem;
+    }
+    .ch-text-bottom-img{
+        font-size: 1.125rem;
+    }
+}
 
 
 /* .fondo-imagen:hover{
