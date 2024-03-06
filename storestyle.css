@@ -8,6 +8,7 @@ body {
 
 }
 
+
 .online-store-container{
     max-width: 1140px;
     padding: 2rem 0;
@@ -53,24 +54,25 @@ body {
     }
     .info-container{
       gap: 1rem;
-      /*justify-content: center;
-      align-items: center;*/
       flex-direction: column;
-      /*padding:2rem 1rem;*/
     }
     .info-container p {
       width: 100%;
     }
-    .info-container2{
+    .info-container2 p {
+      width: 100%;
+    }
+    
+    .info-container2 {
       gap: 1rem;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-      padding:2rem 1rem;
+      align-items: flex-start;
+      
 
     }
     a.global-btn {
       width: 100%;
+      padding: 1rem 0;
     }
 }
 
@@ -93,12 +95,12 @@ p{
  .info-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 2rem;
 
  }
  .info-container p {
-  width: 80%;
+  width: 100%;
  }
  .info-container2 {
     display: flex;
