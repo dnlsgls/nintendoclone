@@ -9,7 +9,7 @@ hr{
     color: inherit;
 }
 
-.separacion{
+.ch-separacion{
     width: 100%;
     margin: 0px;
     position: relative;
@@ -45,7 +45,7 @@ html, body{
 
 /* SECTION QUE ENGLOBA TODO */
 
-.characters{
+.ch-characters{
     position: relative;
     width: 100%;
     padding-top: 3rem;
@@ -55,7 +55,7 @@ html, body{
 
 
 
-.margs{
+.ch-margs{
     max-width: 71.5rem;
     width: 96%;
     margin-left: auto;
@@ -64,7 +64,7 @@ html, body{
 
 
 
-.grid{
+.ch-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -76,7 +76,7 @@ html, body{
 
 /* POSICION */
 
-.title-position{
+.ch-title-position{
     grid-column: 1 / span 4;
 }
 
@@ -97,12 +97,12 @@ html, body{
 
 /* ESTRUCTURA MARIO */
 
-.item{
+.ch-item{
     display: flex;
     flex-direction: column;
 }
 
-.link-anchor{
+.ch-link-anchor{
     display: block;
     position: relative;
     z-index: 1;
@@ -114,20 +114,20 @@ html, body{
     margin-bottom: 0.5rem;
 }
 
-.link-anchor:hover .personaje-img{
+.ch-link-anchor:hover .ch-personaje-img{
     transform: scale(1.2);
 }
 
-.link-anchor:hover .fondo-imagen{
+.ch-link-anchor:hover .ch-fondo-imagen{
     transform: scale(1);
 }
 
-.img-global{
+.ch-img-global{
     width: 100%;
     position: relative;
 }
 
-.primer-div{
+.ch-primer-div{
     position: absolute;
     z-index: -1;
     top: 0px;
@@ -138,7 +138,7 @@ html, body{
     transition: ease-in-out 200ms;
 }
 
-.fondo-imagen{
+.ch-fondo-imagen{
     display: block;
     min-height: 1px;
     width: 100%;
@@ -146,7 +146,7 @@ html, body{
     transition: all 300ms ease-in-out;
 }
 
-.segundo-div{
+.ch-segundo-div{
     z-index: -1;
     top: 0px;
     left: 0px;
@@ -155,14 +155,14 @@ html, body{
     transition: ease-in-out 200ms;
 }
 
-.personaje-img{
+.ch-personaje-img{
     display: block;
     min-height: 1px;
     width: 100%;
     transition: all 300ms ease-in-out;
 }
 
-.text-bottom-img{
+.ch-text-bottom-img{
     font-weight: 700;
     margin-block: 0px;
     font-size: 1.3125rem;
@@ -180,7 +180,7 @@ html, body{
     .ch-title{
         font-size: 1.30rem;
     }
-    .text-bottom-img{
+    .ch-text-bottom-img{
         font-size: 1.125rem;
     }
 }
@@ -190,14 +190,14 @@ html, body{
     .grid{
         grid-template-columns: repeat(2, 1fr);
     }
-    .margs{
+    .ch-margs{
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .title-position{
+    .ch-title-position{
         grid-column: 1 / span 2;
     }
-    .characters{
+    .ch-characters{
         padding-top: 2rem;
         padding-bottom: 2rem;
     }   
