@@ -41,14 +41,7 @@ html, body{
     --border-radius: 1rem;
 }
 
-/* MEDIAQUERY DE ROOT PARA RES MENOR A 1025PX */
 
-@media (max-width: 1025px) {
-    :root{
-        --border-radius-small: 0.5rem;
-        --border-radius: 0.75rem;
-    }
-}
 
 /* SECTION QUE ENGLOBA TODO */
 
@@ -60,12 +53,7 @@ html, body{
     scroll-margin-top: 120px;
 }
 
-@media (max-width: 768px) {
-    .characters{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }   
-}
+
 
 .margs{
     max-width: 71.5rem;
@@ -74,12 +62,7 @@ html, body{
     margin-right: auto;
 }
 
-@media (max-width: 768px){
-    .margs{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
+
 
 .grid{
     display: grid;
@@ -87,11 +70,7 @@ html, body{
     gap: 1rem;
 }
 
-@media (max-width: 768px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
 
 /*! TITULO CHARACTERS */
 
@@ -101,11 +80,6 @@ html, body{
     grid-column: 1 / span 4;
 }
 
-@media (max-width: 768px){
-    .title-position{
-        grid-column: 1 / span 2;
-    }
-}
 
 /* ESTILO */
 
@@ -119,11 +93,7 @@ html, body{
     padding: 0px;
 }
 
-@media (max-width: 429px){
-    .ch-title{
-        font-size: 1.30rem;
-    }
-}
+
 
 /* ESTRUCTURA MARIO */
 
@@ -198,11 +168,42 @@ html, body{
     font-size: 1.3125rem;
 }
 
+
+@media (max-width: 1025px) {
+    :root{
+        --border-radius-small: 0.5rem;
+        --border-radius: 0.75rem;
+    }
+}
+
 @media (max-width: 429px){
+    .ch-title{
+        font-size: 1.30rem;
+    }
     .text-bottom-img{
         font-size: 1.125rem;
     }
 }
+
+
+@media (max-width: 768px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .margs{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .title-position{
+        grid-column: 1 / span 2;
+    }
+    .characters{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }   
+}
+
+
 
 /* .fondo-imagen:hover{
     transform: scale(0.8)
