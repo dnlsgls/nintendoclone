@@ -15,9 +15,6 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-section{
-    display: block;
-}
 
 /*Footer*/
 
@@ -241,15 +238,7 @@ li{
 
 /* QUERYS */
 
-@media (max-width: 500px){
-    .blancoLinks{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-    }
-    .list:first-child{
-        border-color: inherit;
-    }
-}
+
 
 @media (max-width: 1025px){
     .blancoLinks{
@@ -260,19 +249,74 @@ li{
         --border-radius: 1rem;
     }
     .list:first-child{
-        border-color: inherit;
+        border-color: rgb(218, 218, 218);
     }
     
 }
 
 @media (max-width: 750px){
     .blancoLinks{
-        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .elementBanner{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .legal-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: small;
+        gap: 2px;
+    }
+    .seccionBlanca{
+        padding: 0px 0px;
+        margin: 0px 10px;
+    }
+    .logo-blanco{
+        justify-content: center;
+    }
+    .text-legal{
+        display: flex;
+        flex-direction: column;
+    }
+    .link-color{
+        font-size: smaller;
+    }
+    .nintendo-c{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 525px){
+    .blancoLinks{
+        display: grid; 
+        grid-template-columns: 1fr;
+        margin: 1rem auto;
+        row-gap: 2rem;
+    }
+    .seccionBlanca{
+        padding: 32px 16px;
+        margin: 0px 80px;
+        justify-content: center;
+    }
+    .list:first-child{
+        border-color: rgb(218, 218, 218);
+    }
+    .legal-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-legal{
+        display: flex;
+        flex-direction: column;
+        font-size: xx-small;
+        gap: 2px;
+    }
+    .link-color{
+        font-size: smaller;
     }
 }
