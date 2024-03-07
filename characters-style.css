@@ -179,7 +179,7 @@ html, body{
 
 
 @media (max-width: 768px){
-    .grid{
+    .ch-grid{
         grid-template-columns: repeat(2, 1fr);
     }
     .ch-margs{
