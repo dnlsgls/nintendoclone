@@ -1,4 +1,4 @@
-/* Global de la pagina */
+ /* Global de la pagina */
 
 *, ::before, ::after{
     box-sizing: border-box;
@@ -319,4 +319,4 @@ li{
     .link-color{
         font-size: smaller;
     }
-}
+} 
