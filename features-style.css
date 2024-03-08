@@ -444,13 +444,13 @@ background-color: rgba(0, 0, 0, 0.6);;
 .scroll-right{
 position: absolute;
    right: -25px;
-   top: 95px;
+   top: 70px;
 }
 
 .scroll-left{
     position: absolute;
     left: -25px;
-    top: 95px;
+    top: 70px;
 }
 
 .digititle{
