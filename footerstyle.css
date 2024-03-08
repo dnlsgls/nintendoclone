@@ -123,11 +123,13 @@ a {
 }
 
 
-ul{
+.ul-pablo{
     padding: 0px;
+    color: red;
+    font-weight: bold;
     list-style: none;
 }
-li{
+.li-pablo{
     margin: 0;
     padding: 0px;
     font-weight: bold;
