@@ -1,0 +1,322 @@
+/* Global de la pagina */
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgb(72, 72, 72);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*Footer*/
+
+
+:root {
+    --border-radius-small: 0.5rem;
+    --border-radius: 0.75rem;
+}
+
+
+/*Estilos Section*/
+
+.bannerRedes{
+    background-color: rgb(230, 0, 18);
+    padding: 2.25rem 1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+}
+
+/*Estilos DIV*/
+
+
+
+.bannerRedes .footerStyles1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.elementBanner{
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerStyles2{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/*ATRIBUTOS PRIMER <A> (LOGO NINTENDO)*/
+
+
+/* .bannerRedes .footerStyles1 > :first-child {
+    grid-column: span 4;
+    /* justify-self: center;
+}
+ */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*ATRIBUTOS PRIMER SVG (LOGO NINTENDO)*/
+
+.bannerRedes .footerStyles1 a svg {
+    display: block;
+}
+
+/*ATRIBUTOS SEGUNDO <A> (LOGO FACEBOOK)*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* TABLA y querys tabla */
+/* .seccionBlanca{
+    display: flex;
+    align-items: center;
+} */
+.seccionBlanca{
+    width: 100%;
+    padding: 36px 16px;
+    margin: 0px 150px;
+}
+.blancoLinks{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: -1rem;
+    margin: 1rem auto;
+    row-gap: 2rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+
+.list{
+    border-left: 1px solid rgb(218, 218, 218);
+    padding-left: 1.5rem;
+    max-width: 200px;
+}
+.list:first-child{
+    grid-row-start: span 2;
+    grid-row-end: auto;
+    border-color: transparent;
+}
+.list2{
+    border-left: 1px solid rgb(218, 218, 218);
+    padding-left: 1.5rem;
+    grid-row: span 2;
+    max-width: 200px;
+}
+
+
+ul{
+    padding: 0px;
+    list-style: none;
+}
+li{
+    margin: 0;
+    padding: 0px;
+    font-weight: bold;
+    color: red;
+    transition: all ease-in-out 200ms;
+    margin-bottom: 7px;
+}/*  */
+.footerLists{
+    display: flex;
+    flex-direction: row;
+}
+/* .footerlinks:hover{
+    text-decoration: underline color(srgb 255, 0, 0) 2px;
+} */
+.list h4:hover{
+    text-decoration: underline color(srgb 255, 0, 0) 3px;
+}
+.subrayado:hover{
+    border-bottom: 0.15em solid rgb(230, 0, 18);
+}
+.subrayado{
+    transition: all ease-in-out 300ms;
+    border-bottom: 0.15em solid rgba(230, 0, 18, 0);
+}
+.esbr{
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    align-items: center;
+}
+.logo-blanco{
+    display: flex;
+    justify-content: flex-end;
+    /* max-width: 4rem; */
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.logo-blanco svg{
+    width: 5em;
+}
+
+/* LEGAL BAR */
+
+.legal-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(36, 36, 36);
+    padding: 2rem 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.text-legal{
+    display: flex;
+    flex-direction: row;
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.legal-gaps{
+    display: flex;
+    text-align: left;
+}
+.legal-text{
+    margin: 0px;
+    font-weight: 300;
+    font-size: 0.75rem;
+    gap: 2rem;
+}
+.legal-text-2{
+    max-width: unset;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.legal-links{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: start;
+    gap: 1rem;
+    margin: 10px;
+    font-size: small;
+}
+.link-color{
+    color: rgb(255, 255, 255)
+}
+.estilo{
+    font-weight: bold;
+    
+}
+.country{
+    justify-content: center;
+}
+.hover-country{
+    font-size: small;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 300ms;
+}
+.hover-country:hover{
+    border-bottom: 2px solid white;
+}
+
+/* QUERYS */
+
+
+
+@media (max-width: 1025px){
+    .blancoLinks{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    :root {
+        --border-radius-small: 0.75rem;
+        --border-radius: 1rem;
+    }
+    .list:first-child{
+        border-color: rgb(218, 218, 218);
+    }
+    
+}
+
+@media (max-width: 750px){
+    .blancoLinks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .elementBanner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .legal-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: small;
+        gap: 2px;
+    }
+    .seccionBlanca{
+        padding: 0px 0px;
+        margin: 0px 10px;
+    }
+    .logo-blanco{
+        justify-content: center;
+    }
+    .text-legal{
+        display: flex;
+        flex-direction: column;
+    }
+    .link-color{
+        font-size: smaller;
+    }
+    .nintendo-c{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 525px){
+    .blancoLinks{
+        display: grid; 
+        grid-template-columns: 1fr;
+        margin: 1rem auto;
+        row-gap: 2rem;
+    }
+    .seccionBlanca{
+        padding: 32px 16px;
+        margin: 0px 80px;
+        justify-content: center;
+    }
+    .list:first-child{
+        border-color: rgb(218, 218, 218);
+    }
+    .legal-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-legal{
+        display: flex;
+        flex-direction: column;
+        font-size: xx-small;
+        gap: 2px;
+    }
+    .link-color{
+        font-size: smaller;
+    }
+}
