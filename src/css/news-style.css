@@ -1,6 +1,7 @@
 :root {
   --color-primary: rgb(230, 0, 18);
   --color-secondary: rgb(172, 0, 13);
+  --color-gray: rgb(72, 72, 72);
   --border-radius: 12px;
   --border-radius-small: 8px;
   --transition-duration: 300ms;
@@ -18,11 +19,6 @@
       --border-radius-small: 12px;
     }
   }
-}
-
-body {
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .news-container {
@@ -59,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 12px;
     padding-bottom: 16px;
     color: inherit;
     text-decoration: none;
@@ -72,8 +69,9 @@ body {
     }
 
     time {
+      display: block;
       font-weight: 300;
-      margin: 10px 0;
+      padding-bottom: 10px;
     }
 
     h3 {
@@ -88,6 +86,7 @@ body {
       -webkit-box-orient: vertical;
       overflow: hidden;
       font-weight: 300;
+      color: var(--color-gray);
     }
 
     footer span {
@@ -137,7 +136,7 @@ body {
     font-size: 1.125rem;
     color: white;
     border-radius: var(--border-radius-small);
-
+    font-weight: var(--font-weight-nintendo);
     max-width: 100%;
     
     svg {
