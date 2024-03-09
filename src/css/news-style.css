@@ -87,12 +87,14 @@
       overflow: hidden;
       font-weight: 300;
       color: var(--color-gray);
+      margin-bottom: 16px;
     }
 
     footer span {
       color: var(--color-primary);
       border-bottom: 2px solid var(--color-primary);
       width: auto;
+      font-weight: 700;
       transition: color var(--transition-duration) ease-out;
     }
 
