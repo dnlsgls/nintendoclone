@@ -5,20 +5,6 @@
   src: url(assets/fonts/MuseoSans_700.ttf);
 }
 
-:root {
-  --nintendo-font: "museo-sans-700", -apple-system, BlinkMacSystemFont,
-    sans-serif;
-  --color-font: rgb(72, 72, 72);
-  --font-weight-nintendo: 700;
-  --font-size-text: 0.875rem;
-  --line-text: 1.4;
-}
-
-body {
-  font-family: var(--nintendo-font);
-  color: var(--color-font);
-  line-height: var(--line-text);
-}
 /* Estilo del header y Menus*/
 .header-header {
   display: flex;
@@ -71,12 +57,6 @@ body {
   font-size: 0.875rem;
   font-family: inherit;
   transition: all 0.3s ease-in-out;
-}
-
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 .header-icon {
@@ -206,6 +186,7 @@ body {
 
 .header-menu-resp-container {
   display: none;
+  z-index: 9999;
 }
 /*haciendo el responsive*/
 @media (max-width: 1025px) {

@@ -1,30 +1,3 @@
- /* Global de la pagina */
-
- ::before, ::after{
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
-    color: rgb(72, 72, 72);
-    -webkit-font-smoothing: antialiased;
-} 
-
-
-/*Footer*/
-
-
-:root {
-    --border-radius-small: 0.5rem;
-    --border-radius: 0.75rem;
-}
-
-
 /*Estilos Section*/
 
 .bannerRedes{
@@ -37,8 +10,6 @@ html, body {
 }
 
 /*Estilos DIV*/
-
-
 
 .bannerRedes .footerStyles1{
     color: rgb(255, 255, 255);
@@ -68,10 +39,6 @@ html, body {
     /* justify-self: center;
 }
  */
-a{
-    color: inherit;
-    text-decoration: none;
-}
 
 /*ATRIBUTOS PRIMER SVG (LOGO NINTENDO)*/
 
@@ -80,7 +47,7 @@ a{
 }
 
 /*ATRIBUTOS SEGUNDO <A> (LOGO FACEBOOK)*/
-a {
+.footerLists a {
     color: inherit;
     text-decoration: none;
 }
@@ -247,10 +214,6 @@ a {
 @media (max-width: 1025px){
     .blancoLinks{
         grid-template-columns: repeat(4, 1fr);
-    }
-    :root {
-        --border-radius-small: 0.75rem;
-        --border-radius: 1rem;
     }
     .list:first-child{
         border-color: rgb(218, 218, 218);

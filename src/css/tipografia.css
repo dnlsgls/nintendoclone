@@ -64,4 +64,5 @@ body{
   font-family: var(--nintendo-font);
   color: var(--color-font);
   line-height: var(--line-text);
+  -webkit-font-smoothing: antialiased;
 }

@@ -40,45 +40,6 @@ body {
     display: none;
 }
 
-@media (max-width: 768px){
-    .visible {
-        display: none;
-    }
-    .hidden{
-        display: flex;
-        width: 100%;
-        border-radius: 1rem;
-    }
-    .online-store-container{
-      padding: 2rem 1rem;
-    }
-    .gaming-systems-container{
-      padding: 2rem 1rem;
-    }
-    .info-container{
-      gap: 1rem;
-      flex-direction: column;
-    }
-    .info-container p {
-      width: 100%;
-    }
-    .info-container2 p {
-      width: 100%;
-    }
-    
-    .info-container2 {
-      gap: 1rem;
-      flex-direction: column;
-      align-items: flex-start;
-      
-
-    }
-    a.global-btn {
-      width: 100%;
-      padding: 1rem 0;
-    }
-}
-
 
 .store-container h2{
     font-size: 1,75rem;
@@ -114,45 +75,35 @@ body {
  }
 
 
-.global-btn {
-    width: fit-content;
+@media (max-width: 768px){
+  .visible {
+    display: none;
+  }
+  .hidden{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    background-color: #e60012;
-    color: #fff;
-    border-radius: 0.75rem;
-    transition: all 0.3s ease-in-out;
-    font-weight: 700;
-    text-wrap: nowrap;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .online-store-container{
+    padding: 2rem 1rem;
+  }
+  .gaming-systems-container{
+    padding: 2rem 1rem;
+  }
+  .info-container{
+    flex-direction: column;
+    align-items: normal;
+  }
+  .info-container p {
+    width: 100%;
+  }
+  .info-container2 p {
+    width: 100%;
   }
   
-  .store-container span{
-    text-align: center;
-  }
-  .global-btn:hover {
-    background-color: #ac000d;
-    animation: bounceIn 0.5s ease;
-    transform: scale(1.05);
+  .info-container2 {
+    flex-direction: column;
+    align-items: normal;
   }
 
-  @keyframes bounceIn {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.075);
-    }
-    50% {
-      transform: scale(1.03);
-    }
-    75% {
-      transform: scale(1.075);
-    }
-    100% {
-      transform: scale(1.05);
-    }
-  }
+}
