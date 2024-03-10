@@ -157,6 +157,8 @@ a {
 .esbr{
     display: flex;
     justify-content: right;
+    float: right;
+    width: 400px;
     gap: 2rem;
     align-items: center;
 }
@@ -164,8 +166,8 @@ a {
     display: flex;
     justify-content: flex-end;
     /* max-width: 4rem; */
-    width: 100%;
     margin-top: 1rem;
+    width: fit-content;
     margin-bottom: 1rem;
     position: relative;
 }
