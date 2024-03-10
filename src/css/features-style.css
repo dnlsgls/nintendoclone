@@ -1,10 +1,16 @@
 
 /* Featured */
 
+section.featured {
+    margin: var(--section-margin) 0;
+}
+
+section.featured h2 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .digital{
-    max-width: 1025px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
 }
 
@@ -15,6 +21,7 @@
     overflow-x: scroll;
     height: 390px;
     align-items: flex-end;
+    margin-inline: 16px;
 }
 
 .feature{
@@ -391,14 +398,16 @@ svg:has(.heart):hover{
     
 
     transition: 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .scroll-left{
-    background-color: rgba(0, 0, 0, 0.0);
+    opacity: 0;
 }
 
 .scroll-right:hover, .scroll-left:hover{
-background-color: rgba(0, 0, 0, 0.6);;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 
