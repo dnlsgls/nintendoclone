@@ -121,13 +121,17 @@ footer a {
     transition: all ease-in-out 300ms;
     border-bottom: 0.15em solid rgba(230, 0, 18, 0);
 }
-.esbr{
+/* .esbr a{
     display: flex;
-    justify-content: right;
-    float: right;
-    width: 400px;
+    justify-content: flex-end;
+     float: right; 
+    width: 200px;
     gap: 2rem;
     align-items: center;
+} */
+.legal-logo-1{
+    display: flex;
+    justify-content: flex-end;
 }
 .logo-blanco{
     display: flex;
@@ -136,7 +140,7 @@ footer a {
     margin-top: 1rem;
     width: fit-content;
     margin-bottom: 1rem;
-    position: relative;
+    /* position: relative; */
 }
 
 .logo-blanco svg{
