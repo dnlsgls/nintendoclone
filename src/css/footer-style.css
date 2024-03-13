@@ -222,6 +222,9 @@ footer a {
     .list:first-child{
         border-color: rgb(218, 218, 218);
     }
+    .text-legal{
+        padding-bottom: 60px;
+    }
     
 }
 
@@ -253,12 +256,17 @@ footer a {
     .text-legal{
         display: flex;
         flex-direction: column;
+        padding-bottom: 75px;
     }
     .link-color{
         font-size: smaller;
     }
     .nintendo-c{
         flex-direction: row;
+    }
+    .legal-logo-1{
+        display: flex;
+        justify-content: center;
     }
 }
 
