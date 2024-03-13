@@ -2,6 +2,7 @@
   --color-primary: rgb(230, 0, 18);
   --color-secondary: rgb(172, 0, 13);
   --color-gray: rgb(72, 72, 72);
+  --color-dark-gray: rgb(48,48,48);
   --border-radius: 12px;
   --border-radius-small: 8px;
   --transition-duration: 300ms;
@@ -25,6 +26,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 .section-container {

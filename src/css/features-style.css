@@ -3,42 +3,46 @@
 
 section.featured {
     margin: var(--section-margin) 0;
+    position: relative;
 }
 
 section.featured h2 {
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 16px;
+}
+
+section.featured button{
+    top: 40px;
 }
 
 .digital{
     position: relative;
 }
-
 .featured-section{
     display: flex;
     overflow-y: hidden;
     scroll-behavior: smooth;
     overflow-x: scroll;
-    height: 390px;
+    height: 375px;
     align-items: flex-end;
-    margin-inline: 16px;
+    gap: 32px;
+    padding-left: 16px;
 }
 
 .feature{
     width: 262px;
     min-height: 311.25px;
-    margin-right: 16px;
-    margin-left: 16px;
     border-style: solid;
     border-radius: 15px;
     border-width: 1px;
     box-sizing: content-box;
     border-color: lightgray;
+    padding-bottom: 16px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: visible;
 
     transition: 300ms ease-in-out;
 }
@@ -71,15 +75,15 @@ section.featured h2 {
 }
 
 .feature h5{
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(72,72,72);
     height: 40px;
     margin: 16px;
     margin-top: 0px;
     display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .feature div{
@@ -225,7 +229,6 @@ section.featured h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: visible;
 
     transition: 300ms ease-in-out;
 }
@@ -376,6 +379,7 @@ svg:has(.heart):hover{
 }
 
 .scroll-right, .scroll-left{
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.25);
     color: white;
     font-weight: bold;
@@ -388,39 +392,31 @@ svg:has(.heart):hover{
     height: 380px;
     min-width: 70px;
 
-    margin-right: 16px;
-    margin-left: 16px;
-
     border-style: solid;
     border-radius: 15px;
     border-width: 1px;
     border-color: transparent;
-    
-
+    top: 80px;
     transition: 300ms ease-in-out;
-    cursor: pointer;
 }
 
-.scroll-left{
+.scroll-left:disabled, .scroll-right:disabled {
+    visibility: hidden;
     opacity: 0;
+    transition: opacity 300ms ease-in-out, visibility 0ms 300ms;
 }
 
 .scroll-right:hover, .scroll-left:hover{
-    opacity: 1;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 
 .scroll-right{
-position: absolute;
-   right: -25px;
-   top: 70px;
+   right: 0;
 }
 
 .scroll-left{
-    position: absolute;
-    left: -25px;
-    top: 70px;
+    left: 0;
 }
 
 .digititle{
@@ -455,4 +451,19 @@ position: absolute;
 .digititle a:hover{
     
     color: #AC000D;
+}
+
+.rail {
+    overflow-x: hidden;
+    padding-bottom: 16px;
+}
+
+.rail button {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .featured-section {
+        padding-inline: 32px;
+    }
 }

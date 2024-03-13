@@ -188,6 +188,143 @@
   display: none;
   z-index: 9999;
 }
+
+.banner-container {
+  position: relative;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  bottom: 230px;
+  left: 0;
+  right: 0;
+  background-color: #005AA7;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover
+      repeat;
+    padding: 20px 0px;
+  }
+  
+  .offer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    max-width: 1440px;
+    padding-bottom: 10px;
+  }
+  
+  .shop{
+    background-color: rgb(230, 0, 18);
+    border:none;
+    transform: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 8px 15px !important;
+  }
+
+  .shop:hover{
+    background-color: rgb(133, 0, 0);
+    transform: scaleX(1.05) scaleY(1.05) translatez(0px);
+  }
+  
+  .texto{
+    color: rgb(72, 72, 72);
+    text-align: start;
+    margin-right: 20px;
+  }
+  
+  .img-banner {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+  }
+
+  .glide__slide > div{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding-inline: 20px;
+  }
+
+  .glide__arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-block: 36px;
+  }
+
+  .glide__bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .glide__bullets > * {
+    border-radius: 1000px;
+    border: none;
+    width: 48px;
+    height: 8px;
+    background-color: #969696;
+    cursor: pointer;
+  }
+
+  .glide__bullet--active {
+    background-color: #484848;
+  }
+
+  .glide__bullets > *:hover {
+    background-color: #E60012;
+    transition: 300ms ease-in-out;
+  }
+
+  .control-button.pause-button[data-paused="true"] .pause {
+    display: none;
+  }
+
+  .control-button.pause-button[data-paused="false"] .continue {
+    display: none;
+  }
+
+  .control-button {
+    display: grid;
+    padding-left: -5px;
+    
+    padding: 7.5px 5.25px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+
+  .control-button svg {
+    height: 16px;
+    display: flex;
+  }
+
+  .bounce-button.control-button::before {
+    background-color: #484848;
+    border-radius: 100%;
+  }
+
+  .bounce-button.control-button:hover::before {
+    background-color: 
+    #e60012;
+  }
+
+
+  
 /*haciendo el responsive*/
 @media (max-width: 1025px) {
   .header-header {
@@ -236,48 +373,40 @@
     padding: 15px;
     margin-top: -20px;
   }
-}
 
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgb(25, 40, 95), rgb(60, 79, 150)) 0% 0% / cover
-      repeat;
-    padding: 20px;
+  .banner-bg {
+    bottom: 110px;
   }
-  
-  .offer-info {
-    padding: 100px 20px 20px 20px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .shop{
-    background-color: rgb(230, 0, 18);
-    border:none;
-    transform: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    font-size: 1rem;
-    font-family: inherit;
-    font-weight: 700;
-    padding: 8px 15px !important;
+  .offer-info h2 {
+    color: white;
   }
 
-  .shop:hover{
-    background-color: rgb(133, 0, 0);
-    transform: scaleX(1.05) scaleY(1.05) translatez(0px);
-  }
-  
-  .texto{
-    color: rgb(72, 72, 72);
-    text-align: start;
-    margin-right: 20px;
-  }
-  
   .img-banner {
-    margin-bottom: -100px;
-    border-radius: 10px;
+    margin: 0;
   }
 
+  .glide__slide > div {
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .glide__slide > div .img-banner {
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .glide__slide > div .offer-info {
+    display: grid;
+    padding: 0 16px;
+    gap: 32px;
+  }
+
+  .glide__slide > div .offer-info h2 {
+    text-align: center;
+  }
+}
