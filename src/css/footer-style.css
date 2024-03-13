@@ -232,6 +232,8 @@ footer a {
     .blancoLinks{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: 1.5rem 3rem;
     }
     .elementBanner{
         display: flex;
@@ -247,8 +249,7 @@ footer a {
         gap: 2px;
     }
     .seccionBlanca{
-        padding: 0px 0px;
-        margin: 0px 10px;
+        justify-content: center;
     }
     .logo-blanco{
         justify-content: center;
@@ -272,10 +273,14 @@ footer a {
 
 @media (max-width: 525px){
     .blancoLinks{
-        display: grid; 
+        /* display: grid; 
         grid-template-columns: 1fr;
         margin: 1rem auto;
-        row-gap: 2rem;
+        row-gap: 2rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
     .seccionBlanca{
         padding: 32px 16px;
@@ -297,5 +302,8 @@ footer a {
     }
     .link-color{
         font-size: smaller;
+    }
+    .list{
+        max-width: fit-content;
     }
 } 
