@@ -98,4 +98,8 @@ a.red-link-button {
                   scale 350ms cubic-bezier(.6, 3.5, .40, -1.390)
     }
 
+    &:active::before {
+      scale: 1;
+    }
+
 }
