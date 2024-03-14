@@ -7,7 +7,7 @@ section.featured {
 }
 
 section.featured h2 {
-    max-width: 1440px;
+    max-width: 1480px;
     margin: 0 auto;
     padding-left: 16px;
 }
@@ -45,6 +45,7 @@ section.featured button{
     justify-content: space-between;
 
     transition: 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .feature:hover h5{

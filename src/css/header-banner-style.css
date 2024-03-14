@@ -196,9 +196,9 @@
 .banner-bg {
   position: absolute;
   top: 0;
-  bottom: 230px;
-  left: 0;
+  bottom: 288px;
   right: 0;
+  left: 0;
   background-color: #005AA7;
 }
 
@@ -247,10 +247,11 @@
     width: 100%;
     border-radius: var(--border-radius);
     margin-bottom: 30px;
+    box-shadow: rgba(72, 72, 72, 0.15) 0px 4px 16px 0px;
   }
 
   .glide__slide > div{
-    max-width: 1440px;
+    max-width: 1480px;
     margin: 0 auto;
     margin-top: 32px;
     padding-inline: 20px;
@@ -375,7 +376,7 @@
   }
 
   .banner-bg {
-    bottom: 110px;
+    bottom: 145px
   }
   .offer-info h2 {
     color: white;
