@@ -66,6 +66,7 @@ footer a {
     grid-template-columns: repeat(6, 1fr);
     margin-left: -1rem;
     margin: 1rem auto;
+    margin-top: 3rem;
     row-gap: 2rem;
     -webkit-box-pack: center;
     justify-content: center;
